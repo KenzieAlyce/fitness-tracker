@@ -27,3 +27,6 @@ app.use(require('./routes/index'));
 app.listen(PORT,() =>{
     console.log(`app is running on port${PORT}`);
 });
+
+heroku config:set MONGODB_URI=mongodb+srv://kenzieUser:BenFulNetPat4*@cluster0.he6wc.mongodb.net/workoutDb?retryWrites=true&w=majority
+
